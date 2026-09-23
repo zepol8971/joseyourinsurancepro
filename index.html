@@ -668,42 +668,30 @@
         <span style="color: #38bdf8; font-weight: 800;">🎨 Brand Identity:</span>
         <span style="color: var(--text-muted);">Switch between your custom logo concepts:</span>
       </div>
-            <div class="logo-options-pills">
-        <button class="logo-pill active" onclick="setLogo('shield', this)">
-          <span>1. YIP Shield</span>
+                  <div class="logo-options-pills" style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <button class="logo-pill active" onclick="setLogo('gold_obsidian', this)">
+          <span>Gold & Obsidian</span>
         </button>
-        <button class="logo-pill" onclick="setLogo('hexagon', this)">
-          <span>2. Hexagon Tech</span>
+        <button class="logo-pill" onclick="setLogo('faceted_crystal', this)">
+          <span>Faceted Crystal</span>
         </button>
-        <button class="logo-pill" onclick="setLogo('ligature', this)">
-          <span>3. Connected Badge</span>
+        <button class="logo-pill" onclick="setLogo('sapphire_glass', this)">
+          <span>Sapphire Glass</span>
         </button>
-        <button class="logo-pill" onclick="setLogo('crest', this)">
-          <span>4. Florida Crest</span>
+        <button class="logo-pill" onclick="setLogo('florida_emerald', this)">
+          <span>Florida Emerald</span>
         </button>
-        <button class="logo-pill" onclick="setLogo('delta', this)">
-          <span>5. Delta Prism</span>
+        <button class="logo-pill" onclick="setLogo('titanium_cyber', this)">
+          <span>Titanium Armor</span>
         </button>
-        <button class="logo-pill" onclick="setLogo('rings', this)">
-          <span>6. Interlocking Rings</span>
+        <button class="logo-pill" onclick="setLogo('origami_ribbon', this)">
+          <span>3D Ribbon</span>
         </button>
-        <button class="logo-pill" onclick="setLogo('armor', this)">
-          <span>7. Armor Badge</span>
+        <button class="logo-pill" onclick="setLogo('vault_fortress', this)">
+          <span>Vault Lock</span>
         </button>
-        <button class="logo-pill" onclick="setLogo('wings', this)">
-          <span>8. Speed Wings</span>
-        </button>
-        <button class="logo-pill" onclick="setLogo('circuit', this)">
-          <span>9. Circuit Node</span>
-        </button>
-        <button class="logo-pill" onclick="setLogo('wave', this)">
-          <span>10. Coastal Wave</span>
-        </button>
-        <button class="logo-pill" onclick="setLogo('vault', this)">
-          <span>11. Vault Lock</span>
-        </button>
-        <button class="logo-pill" onclick="setLogo('minimal', this)">
-          <span>12. Bauhaus Tech</span>
+        <button class="logo-pill" onclick="setLogo('aero_falcon', this)">
+          <span>Falcon Wings</span>
         </button>
       </div></div>
     </div>
@@ -783,230 +771,412 @@
       <h3>4 Custom Logo Concepts for Your Insurance Pro</h3>
       <p>Click any logo below to activate it live across the site and navigation header.</p>
 
-            <div class="logo-cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px;">
-        <div class="logo-card active" id="card-shield" onclick="selectLogoCard('shield')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <div class="logo-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px;">
+        <div class="logo-card active" id="card-gold_obsidian" onclick="selectLogoCard('gold_obsidian')" style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+          <div style="margin-bottom: 12px; display: flex; justify-content: center;"><svg class="logo-card-svg" style="width: 100px; height: 100px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6));" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gYipShieldNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#2563eb" />
-      <stop offset="100%" stop-color="#10b981" />
+    <filter id="fGoldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#ca8a04" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="goldHeavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="25%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="75%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#78350f"/>
     </linearGradient>
+    <radialGradient id="obsidianGlass" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
   </defs>
-  <path d="M50 8L16 22V48C16 70 30 88 50 94C70 88 84 70 84 48V22L50 8Z" stroke="url(#gYipShieldNav)" stroke-width="4" fill="#030712"/>
-  <path d="M32 30L50 48M68 30L50 48" stroke="#38bdf8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M50 48V76" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
-  <circle cx="50" cy="24" r="3.5" fill="#38bdf8"/>
-  <path d="M50 48H65C72 48 77 53 77 60C77 67 72 72 65 72H50" stroke="#10b981" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 1: YIP Shield Monogram</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">The 'Y' forms upper wings, 'I' forms the center pillar, and 'P' forms the security loop.</p>
-          <span class="select-logo-badge">Active Logo</span>
+  <g filter="url(#fGoldGlow)">
+    <!-- Outer Heavy Beveled Gold Rim -->
+    <path d="M60 8 L18 24 V58 C18 84 36 104 60 112 C84 104 102 84 102 58 V24 L60 8 Z" fill="url(#goldHeavy)"/>
+    <!-- Inner Dark Glass Inset with Bevel Rim -->
+    <path d="M60 14 L23 28 V58 C23 80 39 99 60 106 C81 99 97 80 97 58 V28 L60 14 Z" fill="#030712"/>
+    <path d="M60 16 L25 30 V58 C25 78 40 96 60 103 C80 96 95 78 95 58 V30 L60 16 Z" fill="url(#obsidianGlass)"/>
+    
+    <!-- Top 24k Diamond Star -->
+    <path d="M60 22 L63 29 H70 L64.5 33 L66.5 40 L60 36 L53.5 40 L55.5 33 L50 29 H57 L60 22 Z" fill="url(#goldHeavy)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.5))"/>
+
+    <!-- Sculpted Metallic Gold Y I P Monogram -->
+    <!-- Drop Shadow for Letters -->
+    <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.9))">
+      <!-- Y -->
+      <path d="M35 48 L45 60 V78 M55 48 L45 60" stroke="#78350f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M35 48 L45 60 V78 M55 48 L45 60" stroke="url(#goldHeavy)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- I -->
+      <path d="M60 48 V78" stroke="#78350f" stroke-width="6" stroke-linecap="round"/>
+      <path d="M60 48 V78" stroke="url(#goldHeavy)" stroke-width="4" stroke-linecap="round"/>
+      
+      <!-- P -->
+      <path d="M72 78 V48 H82 C88 48 91 51.5 91 57 C91 62.5 88 66 82 66 H72" stroke="#78350f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M72 78 V48 H82 C88 48 91 51.5 91 57 C91 62.5 88 66 82 66 H72" stroke="url(#goldHeavy)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Lower Golden Arc Filigree -->
+    <path d="M38 88 C48 94 72 94 82 88" stroke="url(#goldHeavy)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg></div>
+          <h4 style="margin: 0 0 6px; font-size: 16px; color: #fff; font-weight: 700;">1. Executive Gold & Obsidian Crest</h4>
+          <p style="font-size: 13px; color: #94a3b8; line-height: 1.4; margin-bottom: 14px; min-height: 54px;">Heavy 24k beveled gold frame, radial obsidian glass, and sculpted 3D metallic YIP with a diamond star.</p>
+          <span class="select-logo-badge" style="display: inline-block; padding: 6px 14px; font-size: 12px; font-weight: 600; border-radius: 20px; background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3);">Active Brand Mark</span>
         </div>
-        <div class="logo-card" id="card-hexagon" onclick="selectLogoCard('hexagon')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="logo-card" id="card-faceted_crystal" onclick="selectLogoCard('faceted_crystal')" style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+          <div style="margin-bottom: 12px; display: flex; justify-content: center;"><svg class="logo-card-svg" style="width: 100px; height: 100px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6));" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gYipHexNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" />
-      <stop offset="100%" stop-color="#3b82f6" />
+    <filter id="fGlow1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0284c7" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="facetTL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="facetTR" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="facetBL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="facetBR" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
     </linearGradient>
   </defs>
-  <path d="M50 8L86 28V72L50 92L14 72V28L50 8Z" stroke="url(#gYipHexNav)" stroke-width="3.5" fill="rgba(6,182,212,0.06)"/>
-  <path d="M26 34L35 48V66M44 34L35 48" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M51 34V66" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
-  <circle cx="51" cy="27" r="2.5" fill="#38bdf8"/>
-  <path d="M62 66V34H73C78.5 34 82 37.5 82 43C82 48.5 78.5 52 73 52H62" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 2: YIP Hexagon Tech</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">Cyber-modern geometric stencil with distinct Y · I · P letterforms inside a shield hexagon.</p>
-          <span class="select-logo-badge">Click to Select</span>
+  <!-- Outer Glow Shadow -->
+  <g filter="url(#fGlow1)">
+    <!-- Base Shield -->
+    <path d="M60 8 L18 24 V58 C18 84 36 104 60 112 C84 104 102 84 102 58 V24 L60 8 Z" fill="#030712" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+    
+    <!-- 3D Shaded Facets -->
+    <!-- Top-Left Facet (Brightest Highlight) -->
+    <path d="M60 12 L22 26 V56 L60 52 Z" fill="url(#facetTL)" opacity="0.95"/>
+    <!-- Top-Right Facet (Midtone) -->
+    <path d="M60 12 L98 26 V56 L60 52 Z" fill="url(#facetTR)" opacity="0.85"/>
+    <!-- Bottom-Left Facet (Deep Azure) -->
+    <path d="M22 56 C22 79 38 98 60 108 L60 52 Z" fill="url(#facetBL)" opacity="0.9"/>
+    <!-- Bottom-Right Facet (Dark Shadow/Occlusion) -->
+    <path d="M98 56 C98 79 82 98 60 108 L60 52 Z" fill="url(#facetBR)" opacity="0.95"/>
+    
+    <!-- Facet Seams (Light Refraction) -->
+    <path d="M60 12 V108 M22 56 L98 56" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <path d="M60 12 L22 26 M60 12 L98 26" stroke="white" stroke-width="2"/>
+
+    <!-- Central Floating 3D Badge -->
+    <rect x="28" y="36" width="64" height="48" rx="14" fill="#030712" stroke="url(#goldAcc)" stroke-width="2" filter="drop-shadow(0 6px 8px rgba(0,0,0,0.8))"/>
+    
+    <!-- 3D Beveled Y I P Monogram -->
+    <!-- Y -->
+    <path d="M36 46 L44 58 V72 M52 46 L44 58" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36 46 L44 58 V72 M52 46 L44 58" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- I -->
+    <path d="M59 46 V72" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M59 46 V72" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- P -->
+    <path d="M70 72 V46 H79 C84.5 46 88 49 88 54 C88 59 84.5 62 79 62 H70" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M70 72 V46 H79 C84.5 46 88 49 88 54 C88 59 84.5 62 79 62 H70" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg></div>
+          <h4 style="margin: 0 0 6px; font-size: 16px; color: #fff; font-weight: 700;">2. 3D Faceted Crystal Shield</h4>
+          <p style="font-size: 13px; color: #94a3b8; line-height: 1.4; margin-bottom: 14px; min-height: 54px;">Volumetric crystal shield with light refraction facets, floating gold badge, and beveled YIP monogram.</p>
+          <span class="select-logo-badge" style="display: inline-block; padding: 6px 14px; font-size: 12px; font-weight: 600; border-radius: 20px; background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3);">Click to Preview</span>
         </div>
-        <div class="logo-card" id="card-ligature" onclick="selectLogoCard('ligature')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="logo-card" id="card-sapphire_glass" onclick="selectLogoCard('sapphire_glass')" style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+          <div style="margin-bottom: 12px; display: flex; justify-content: center;"><svg class="logo-card-svg" style="width: 100px; height: 100px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6));" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gYipLigNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#0ea5e9" />
+    <filter id="fGlassGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#38bdf8" flood-opacity="0.5"/>
+    </filter>
+    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="glassFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.25)"/>
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.85)"/>
     </linearGradient>
   </defs>
-  <circle cx="50" cy="50" r="42" stroke="url(#gYipLigNav)" stroke-width="3.5" fill="rgba(15,23,42,0.85)"/>
-  <path d="M24 35L36 50V68M46 35L37.5 48" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M50 35V68" stroke="#a5b4fc" stroke-width="4.5" stroke-linecap="round"/>
-  <path d="M60 68V35H73C79 35 83 39 83 45C83 51 79 55 73 55H60" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M20 78H80" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-linecap="round"/>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 3: YIP Connected Badge</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">Cohesive rounded badge emblem with continuous precision Y-I-P typography.</p>
-          <span class="select-logo-badge">Click to Select</span>
+  <g filter="url(#fGlassGlow)">
+    <!-- Outer Floating Neon Hexagon -->
+    <path d="M60 8 L104 32 V88 L60 112 L16 88 V32 L60 8 Z" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="3"/>
+    <!-- Inner Prism Edge -->
+    <path d="M60 16 L96 36 V84 L60 104 L24 84 V36 L60 16 Z" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+
+    <!-- High-Definition YIP Sculpted Mark -->
+    <!-- Integrated Y-I-P Fusion -->
+    <path d="M38 42 L60 60 L82 42" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.8))"/>
+    <path d="M38 42 L60 60 L82 42" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Center I Column -->
+    <path d="M60 60 V90" stroke="white" stroke-width="6" stroke-linecap="round" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.8))"/>
+    <path d="M60 60 V90" stroke="#818cf8" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Right P Loop -->
+    <path d="M60 60 H76 C83 60 88 65 88 72 C88 79 83 84 76 84 H60" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.8))"/>
+    <path d="M60 60 H76 C83 60 88 65 88 72 C88 79 83 84 76 84 H60" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg></div>
+          <h4 style="margin: 0 0 6px; font-size: 16px; color: #fff; font-weight: 700;">3. Sapphire Glass Neon Hex</h4>
+          <p style="font-size: 13px; color: #94a3b8; line-height: 1.4; margin-bottom: 14px; min-height: 54px;">Floating frosted neon glass with electric cyan/emerald gradients and unified 3D Y-I-P monogram.</p>
+          <span class="select-logo-badge" style="display: inline-block; padding: 6px 14px; font-size: 12px; font-weight: 600; border-radius: 20px; background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3);">Click to Preview</span>
         </div>
-        <div class="logo-card" id="card-crest" onclick="selectLogoCard('crest')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="logo-card" id="card-florida_emerald" onclick="selectLogoCard('florida_emerald')" style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+          <div style="margin-bottom: 12px; display: flex; justify-content: center;"><svg class="logo-card-svg" style="width: 100px; height: 100px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6));" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gYipCrestNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="50%" stop-color="#0ea5e9" />
-      <stop offset="100%" stop-color="#3b82f6" />
+    <filter id="fEmeraldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#059669" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="emeraldHeavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="40%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="goldFiligree" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
     </linearGradient>
   </defs>
-  <path d="M50 6L18 20V50C18 72 32 88 50 94C68 88 82 72 82 50V20L50 6Z" fill="rgba(16,185,129,0.08)" stroke="url(#gYipCrestNav)" stroke-width="3.5"/>
-  <path d="M50 16L51.5 20H55.5L52.5 22.5L53.5 26.5L50 24L46.5 26.5L47.5 22.5L44.5 20H48.5L50 16Z" fill="#f59e0b"/>
-  <path d="M28 38L37 51V68M46 38L38 49" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M50 38V68" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round"/>
-  <path d="M60 68V38H72C77.5 38 81 41.5 81 47C81 52.5 77.5 56 72 56H60" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 4: YIP Apex Florida Crest</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">Institutional security shield featuring central Y-I-P monogram topped with an illuminated star.</p>
-          <span class="select-logo-badge">Click to Select</span>
+  <g filter="url(#fEmeraldGlow)">
+    <!-- Heavy Emerald Shield Body -->
+    <path d="M60 8 L18 24 V58 C18 84 36 104 60 112 C84 104 102 84 102 58 V24 L60 8 Z" fill="url(#emeraldHeavy)" stroke="url(#goldFiligree)" stroke-width="2.5"/>
+    <path d="M60 14 L24 28 V58 C24 80 39 98 60 105 C81 98 96 80 96 58 V28 L60 14 Z" fill="#022c22"/>
+
+    <!-- Sunburst Radiance Beams -->
+    <g opacity="0.35" stroke="url(#goldFiligree)" stroke-width="1.5">
+      <line x1="60" y1="40" x2="30" y2="20"/>
+      <line x1="60" y1="40" x2="45" y2="16"/>
+      <line x1="60" y1="40" x2="60" y2="14"/>
+      <line x1="60" y1="40" x2="75" y2="16"/>
+      <line x1="60" y1="40" x2="90" y2="20"/>
+    </g>
+
+    <!-- Florida Golden Palm Wings at Base -->
+    <path d="M30 88 C40 82 50 86 60 96 C70 86 80 82 90 88" stroke="url(#goldFiligree)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M36 82 C44 76 52 80 60 90 C68 80 76 76 84 82" stroke="url(#goldFiligree)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Central Sculpted Golden YIP -->
+    <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.85))">
+      <!-- Y -->
+      <path d="M36 44 L45 56 V74 M54 44 L45 56" stroke="url(#goldFiligree)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M36 44 L45 56 V74 M54 44 L45 56" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- I -->
+      <path d="M60 44 V74" stroke="url(#goldFiligree)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M60 44 V74" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="60" cy="38" r="2.5" fill="#fde047"/>
+      
+      <!-- P -->
+      <path d="M71 74 V44 H81 C86.5 44 89.5 47.5 89.5 53 C89.5 58.5 86.5 62 81 62 H71" stroke="url(#goldFiligree)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M71 74 V44 H81 C86.5 44 89.5 47.5 89.5 53 C89.5 58.5 86.5 62 81 62 H71" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg></div>
+          <h4 style="margin: 0 0 6px; font-size: 16px; color: #fff; font-weight: 700;">4. Florida Emerald & Gold Palm</h4>
+          <p style="font-size: 13px; color: #94a3b8; line-height: 1.4; margin-bottom: 14px; min-height: 54px;">Regal emerald green shield with golden palm fronds, sunburst radiance, and sculpted 3D gold lettering.</p>
+          <span class="select-logo-badge" style="display: inline-block; padding: 6px 14px; font-size: 12px; font-weight: 600; border-radius: 20px; background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3);">Click to Preview</span>
         </div>
-        <div class="logo-card" id="card-delta" onclick="selectLogoCard('delta')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="logo-card" id="card-titanium_cyber" onclick="selectLogoCard('titanium_cyber')" style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+          <div style="margin-bottom: 12px; display: flex; justify-content: center;"><svg class="logo-card-svg" style="width: 100px; height: 100px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6));" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gDeltaNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#3b82f6" />
+    <filter id="fNeonCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#06b6d4" flood-opacity="0.6"/>
+    </filter>
+    <linearGradient id="tiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
     </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <pattern id="carbonPat" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#090d16"/>
+      <rect width="3" height="3" fill="#131c2e"/>
+      <rect x="3" y="3" width="3" height="3" fill="#1e293b"/>
+    </pattern>
   </defs>
-  <path d="M50 10L90 82H10L50 10Z" stroke="url(#gDeltaNav)" stroke-width="3.5" fill="rgba(56,189,248,0.06)"/>
-  <path d="M30 42L40 54V72M50 42L40 54" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M52 42V72" stroke="white" stroke-width="4" stroke-linecap="round"/>
-  <path d="M62 72V42H73C78 42 81 45.5 81 50.5C81 55.5 78 59 73 59H62" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 5: YIP Cyber Delta Prism</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">Futuristic triangular prism security mark with high-tech cyan/blue gradients.</p>
-          <span class="select-logo-badge">Click to Select</span>
+  <g filter="url(#fNeonCyan)">
+    <!-- Heavy Titanium Hexagon Frame -->
+    <path d="M60 8 L104 32 V88 L60 112 L16 88 V32 L60 8 Z" fill="url(#tiGrad)" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Carbon Fiber Backplate -->
+    <path d="M60 14 L98 35 V85 L60 106 L22 85 V35 L60 14 Z" fill="url(#carbonPat)"/>
+    
+    <!-- Neon Underglow Race Line -->
+    <path d="M60 18 L94 37 V83 L60 102 L26 83 V37 L60 18 Z" stroke="url(#neonCyan)" stroke-width="2" fill="none" opacity="0.9"/>
+    
+    <!-- Industrial Bolt Rivets -->
+    <circle cx="60" cy="11" r="2.5" fill="#e2e8f0"/>
+    <circle cx="101" cy="34" r="2.5" fill="#e2e8f0"/>
+    <circle cx="101" cy="86" r="2.5" fill="#e2e8f0"/>
+    <circle cx="60" cy="109" r="2.5" fill="#e2e8f0"/>
+    <circle cx="19" cy="86" r="2.5" fill="#e2e8f0"/>
+    <circle cx="19" cy="34" r="2.5" fill="#e2e8f0"/>
+
+    <!-- High-Impact CNC Beveled YIP Mark -->
+    <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.95))">
+      <!-- Background Glow Plate -->
+      <rect x="28" y="44" width="64" height="34" rx="8" fill="#030712" stroke="#38bdf8" stroke-width="1.5"/>
+      <!-- Neon Monogram Text -->
+      <text x="60" y="69" fill="white" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="22" text-anchor="middle" letter-spacing="3">YIP</text>
+      <text x="60" y="69" fill="url(#neonCyan)" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="22" text-anchor="middle" letter-spacing="3" opacity="0.3">YIP</text>
+      <!-- Sub-label Tech Bar -->
+      <path d="M36 74 H84" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg></div>
+          <h4 style="margin: 0 0 6px; font-size: 16px; color: #fff; font-weight: 700;">5. Titanium Carbon Armor</h4>
+          <p style="font-size: 13px; color: #94a3b8; line-height: 1.4; margin-bottom: 14px; min-height: 54px;">Heavy gunmetal titanium hex with industrial rivets, carbon-fiber weave plate, and glowing neon YIP mark.</p>
+          <span class="select-logo-badge" style="display: inline-block; padding: 6px 14px; font-size: 12px; font-weight: 600; border-radius: 20px; background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3);">Click to Preview</span>
         </div>
-        <div class="logo-card" id="card-rings" onclick="selectLogoCard('rings')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="logo-card" id="card-origami_ribbon" onclick="selectLogoCard('origami_ribbon')" style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+          <div style="margin-bottom: 12px; display: flex; justify-content: center;"><svg class="logo-card-svg" style="width: 100px; height: 100px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6));" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gRingsNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0ea5e9" />
-      <stop offset="100%" stop-color="#2563eb" />
+    <filter id="fRibbonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#6366f1" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="ribbonY1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="ribbonY2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="ribbonI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="ribbonP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
     </linearGradient>
   </defs>
-  <rect x="8" y="18" width="84" height="64" rx="20" stroke="rgba(255,255,255,0.12)" stroke-width="2" fill="#050b18"/>
-  <rect x="12" y="22" width="76" height="56" rx="16" fill="rgba(14,165,233,0.06)"/>
-  <path d="M24 36L34 50V64M44 36L34 50" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M50 36V64" stroke="#10b981" stroke-width="4.5" stroke-linecap="round"/>
-  <circle cx="50" cy="30" r="2.5" fill="#10b981"/>
-  <path d="M60 64V36H72C77 36 80 39.5 80 44.5C80 49.5 77 53 72 53H60" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 6: YIP Interlocking Rings</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">Sleek rounded rectangle frame with vibrant emerald and sapphire Y-I-P glyphs.</p>
-          <span class="select-logo-badge">Click to Select</span>
+  <g filter="url(#fRibbonGlow)">
+    <!-- Base Circular Dark Disc with Gradient Rim -->
+    <circle cx="60" cy="60" r="50" fill="#040817" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+    <circle cx="60" cy="60" r="48" stroke="url(#ribbonY1)" stroke-width="1.5" opacity="0.3"/>
+
+    <!-- Continuous 3D Origami Folds -->
+    <!-- Letter Y Left Fold -->
+    <path d="M26 36 L44 58 L44 84 L36 84 L36 62 L20 42 Z" fill="url(#ribbonY1)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.5))"/>
+    <!-- Letter Y Right Fold (Overlaps Left) -->
+    <path d="M52 36 L44 58 L44 84 L48 84 L58 42 Z" fill="url(#ribbonY2)"/>
+    
+    <!-- Cast Shadow under Y -->
+    <path d="M44 58 L48 84 L40 84 Z" fill="#020617" opacity="0.6"/>
+
+    <!-- Letter I (Center Column with Top Bevel) -->
+    <path d="M56 36 H64 V84 H56 Z" fill="url(#ribbonI)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.5))"/>
+    <polygon points="56,36 60,30 68,30 64,36" fill="#e0e7ff"/>
+
+    <!-- Letter P (Right Sweeping 3D Loop) -->
+    <path d="M72 84 V36 H86 C94 36 99 41 99 49 C99 57 94 62 86 62 H72" stroke="url(#ribbonP)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.6))"/>
+    <path d="M72 84 V36 H86 C94 36 99 41 99 49 C99 57 94 62 86 62 H72" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  </g>
+</svg></div>
+          <h4 style="margin: 0 0 6px; font-size: 16px; color: #fff; font-weight: 700;">6. Volumetric 3D Ribbon</h4>
+          <p style="font-size: 13px; color: #94a3b8; line-height: 1.4; margin-bottom: 14px; min-height: 54px;">Continuous aerodynamic metallic ribbon folding through 3D space with cast ambient shadows.</p>
+          <span class="select-logo-badge" style="display: inline-block; padding: 6px 14px; font-size: 12px; font-weight: 600; border-radius: 20px; background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3);">Click to Preview</span>
         </div>
-        <div class="logo-card" id="card-armor" onclick="selectLogoCard('armor')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="logo-card" id="card-vault_fortress" onclick="selectLogoCard('vault_fortress')" style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+          <div style="margin-bottom: 12px; display: flex; justify-content: center;"><svg class="logo-card-svg" style="width: 100px; height: 100px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6));" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gArmorNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2563eb" />
-      <stop offset="100%" stop-color="#0284c7" />
+    <filter id="fVaultGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#f59e0b" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="vaultSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="30%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
     </linearGradient>
   </defs>
-  <path d="M50 6L14 20V50C14 74 30 90 50 96C70 90 86 74 86 50V20L50 6Z" fill="url(#gArmorNav)"/>
-  <path d="M50 14L22 26V50C22 70 34 83 50 88C66 83 78 70 78 50V26L50 14Z" fill="#030712"/>
-  <text x="50" y="58" fill="white" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="24" text-anchor="middle" letter-spacing="2">YIP</text>
-  <path d="M32 66H68" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 7: YIP Stencil Armor Badge</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">Heavy-duty steel blue shield with bold, high-impact YIP stencil stamping.</p>
-          <span class="select-logo-badge">Click to Select</span>
+  <g filter="url(#fVaultGlow)">
+    <!-- Outer Heavy Heavy Gear Disc -->
+    <circle cx="60" cy="60" r="52" fill="url(#vaultSteel)" stroke="url(#brassGrad)" stroke-width="3"/>
+    <!-- Outer Radial Indicator Grooves -->
+    <circle cx="60" cy="60" r="44" stroke="rgba(255,255,255,0.15)" stroke-width="4" stroke-dasharray="4 6"/>
+    <!-- Tumbler Ring -->
+    <circle cx="60" cy="60" r="36" fill="#030712" stroke="url(#brassGrad)" stroke-width="2"/>
+    
+    <!-- 4 Heavy Vault Locking Lugs -->
+    <rect x="56" y="10" width="8" height="8" rx="2" fill="url(#brassGrad)"/>
+    <rect x="102" y="56" width="8" height="8" rx="2" fill="url(#brassGrad)"/>
+    <rect x="56" y="102" width="8" height="8" rx="2" fill="url(#brassGrad)"/>
+    <rect x="10" y="56" width="8" height="8" rx="2" fill="url(#brassGrad)"/>
+
+    <!-- Heavy Beveled Chrome YIP Monogram -->
+    <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.9))">
+      <text x="60" y="69" fill="url(#brassGrad)" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="24" text-anchor="middle" letter-spacing="3">YIP</text>
+      <text x="60" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="24" text-anchor="middle" letter-spacing="3" opacity="0.3">YIP</text>
+    </g>
+  </g>
+</svg></div>
+          <h4 style="margin: 0 0 6px; font-size: 16px; color: #fff; font-weight: 700;">7. Fortress Bank Vault Lock</h4>
+          <p style="font-size: 13px; color: #94a3b8; line-height: 1.4; margin-bottom: 14px; min-height: 54px;">Heavy steel combination dial with brass locking lugs and deep-set beveled YIP monogram.</p>
+          <span class="select-logo-badge" style="display: inline-block; padding: 6px 14px; font-size: 12px; font-weight: 600; border-radius: 20px; background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3);">Click to Preview</span>
         </div>
-        <div class="logo-card" id="card-wings" onclick="selectLogoCard('wings')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="logo-card" id="card-aero_falcon" onclick="selectLogoCard('aero_falcon')" style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+          <div style="margin-bottom: 12px; display: flex; justify-content: center;"><svg class="logo-card-svg" style="width: 100px; height: 100px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6));" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gWingsNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" />
-      <stop offset="50%" stop-color="#3b82f6" />
-      <stop offset="100%" stop-color="#10b981" />
+    <filter id="fAeroGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0284c7" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="aeroGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+    <linearGradient id="aeroGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#064e3b"/>
     </linearGradient>
   </defs>
-  <path d="M12 28L48 50L16 66L24 50L12 28Z" fill="rgba(6,182,212,0.3)"/>
-  <path d="M88 28L52 50L84 66L76 50L88 28Z" fill="rgba(16,185,129,0.3)"/>
-  <circle cx="50" cy="50" r="26" fill="#030712" stroke="url(#gWingsNav)" stroke-width="3"/>
-  <text x="50" y="57" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="18" text-anchor="middle" letter-spacing="1.5">YIP</text>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 8: YIP Dynamic Speed Wings</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">Aerodynamic dual swept-wing emblem with center badge for rapid quoting agility.</p>
-          <span class="select-logo-badge">Click to Select</span>
-        </div>
-        <div class="logo-card" id="card-circuit" onclick="selectLogoCard('circuit')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="gCircuitNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#06b6d4" />
-    </linearGradient>
-  </defs>
-  <rect x="12" y="12" width="76" height="76" rx="22" fill="#030712" stroke="url(#gCircuitNav)" stroke-width="3"/>
-  <circle cx="25" cy="25" r="4" fill="#10b981"/>
-  <path d="M25 25L38 38H62L75 25" stroke="rgba(16,185,129,0.4)" stroke-width="2"/>
-  <circle cx="75" cy="25" r="4" fill="#06b6d4"/>
-  <path d="M26 44L36 56V72M46 44L36 56" stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M51 44V72" stroke="white" stroke-width="4" stroke-linecap="round"/>
-  <path d="M62 72V44H74C79 44 82 47.5 82 52.5C82 57.5 79 61 74 61H62" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 9: YIP Fintech Circuit Node</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">Smart insurance tech mark with illuminated circuit traces and emerald data points.</p>
-          <span class="select-logo-badge">Click to Select</span>
-        </div>
-        <div class="logo-card" id="card-wave" onclick="selectLogoCard('wave')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="gWaveNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0ea5e9" />
-      <stop offset="50%" stop-color="#06b6d4" />
-      <stop offset="100%" stop-color="#10b981" />
-    </linearGradient>
-  </defs>
-  <circle cx="50" cy="50" r="42" fill="#030712" stroke="url(#gWaveNav)" stroke-width="3.5"/>
-  <path d="M16 68C26 60 36 74 50 68C64 62 74 74 84 68" stroke="url(#gWaveNav)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M26 30L36 44V58M46 30L36 44" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M51 30V58" stroke="white" stroke-width="4" stroke-linecap="round"/>
-  <path d="M62 58V30H73C78 30 81 33.5 81 38.5C81 43.5 78 47 73 47H62" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 10: YIP Florida Coastal Wave</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">Dual aqua and emerald ocean wave crest protecting bold Florida YIP letterforms.</p>
-          <span class="select-logo-badge">Click to Select</span>
-        </div>
-        <div class="logo-card" id="card-vault" onclick="selectLogoCard('vault')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="gVaultNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b" />
-      <stop offset="50%" stop-color="#3b82f6" />
-      <stop offset="100%" stop-color="#0ea5e9" />
-    </linearGradient>
-  </defs>
-  <circle cx="50" cy="50" r="42" stroke="url(#gVaultNav)" stroke-width="4" fill="#060a16"/>
-  <circle cx="50" cy="14" r="3" fill="#f59e0b"/>
-  <circle cx="86" cy="50" r="3" fill="#38bdf8"/>
-  <circle cx="50" cy="86" r="3" fill="#3b82f6"/>
-  <circle cx="14" cy="50" r="3" fill="#38bdf8"/>
-  <circle cx="50" cy="50" r="28" stroke="rgba(255,255,255,0.12)" stroke-width="2" stroke-dasharray="4 4"/>
-  <text x="50" y="58" fill="white" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="21" text-anchor="middle" letter-spacing="2">YIP</text>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 11: YIP Fortress Vault Lock</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">High-security bank vault dial with radial indicator notches and bold YIP center.</p>
-          <span class="select-logo-badge">Click to Select</span>
-        </div>
-        <div class="logo-card" id="card-minimal" onclick="selectLogoCard('minimal')">
-          <svg class="logo-card-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="gMinNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#10b981" />
-    </linearGradient>
-  </defs>
-  <rect x="8" y="16" width="84" height="68" rx="16" fill="#050a18" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
-  <path d="M22 34L33 48V66M44 34L33 48" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M51 34V66" stroke="white" stroke-width="5" stroke-linecap="round"/>
-  <path d="M61 66V34H74C80 34 84 38 84 44C84 50 80 54 74 54H61" stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="74" cy="44" r="3" fill="#030712"/>
-</svg>
-          <h4 style="margin: 8px 0 4px; font-size: 15px;">Option 12: YIP Swiss Bauhaus Tech</h4>
-          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px;">Ultra-clean minimalist rounded badge with bold geometric Y-I-P typography.</p>
-          <span class="select-logo-badge">Click to Select</span>
+  <g filter="url(#fAeroGlow)">
+    <!-- Aerodynamic Layered Wings -->
+    <!-- Left Wing (Top Layer) -->
+    <path d="M10 32 L56 56 L20 72 L28 56 L10 32 Z" fill="url(#aeroGrad1)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <!-- Left Wing (Sub Layer) -->
+    <path d="M18 44 L56 62 L26 78 L18 44 Z" fill="#0369a1" opacity="0.6"/>
+
+    <!-- Right Wing (Top Layer) -->
+    <path d="M110 32 L64 56 L100 72 L92 56 L110 32 Z" fill="url(#aeroGrad2)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <!-- Right Wing (Sub Layer) -->
+    <path d="M102 44 L64 62 L94 78 L102 44 Z" fill="#047857" opacity="0.6"/>
+
+    <!-- Central High-Tech Shield Pod -->
+    <path d="M60 22 L44 38 V74 L60 94 L76 74 V38 L60 22 Z" fill="#030712" stroke="white" stroke-width="2" filter="drop-shadow(0 6px 10px rgba(0,0,0,0.8))"/>
+    
+    <!-- Bold Metallic YIP Text in Pod -->
+    <text x="60" y="64" fill="white" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="16" text-anchor="middle" letter-spacing="1.5">YIP</text>
+    <circle cx="60" cy="78" r="2.5" fill="#38bdf8"/>
+  </g>
+</svg></div>
+          <h4 style="margin: 0 0 6px; font-size: 16px; color: #fff; font-weight: 700;">8. Aero Falcon Speed Wings</h4>
+          <p style="font-size: 13px; color: #94a3b8; line-height: 1.4; margin-bottom: 14px; min-height: 54px;">Swept-wing aerodynamic flight silhouette in marine azure and emerald with armored center pod.</p>
+          <span class="select-logo-badge" style="display: inline-block; padding: 6px 14px; font-size: 12px; font-weight: 600; border-radius: 20px; background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3);">Click to Preview</span>
         </div>
       </div></div>
     </div>
@@ -1338,170 +1508,372 @@
   <!-- JAVASCRIPT: LOGO SWITCHER & AMS EXPORT LOGIC -->
   <script>
     // SVG Templates
-        const logoSVGs = {
-      shield: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            const logoSVGs = {
+      gold_obsidian: `<svg class="active-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gYipShieldNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#2563eb" />
-      <stop offset="100%" stop-color="#10b981" />
+    <filter id="fGoldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#ca8a04" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="goldHeavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="25%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="75%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#78350f"/>
     </linearGradient>
+    <radialGradient id="obsidianGlass" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
   </defs>
-  <path d="M50 8L16 22V48C16 70 30 88 50 94C70 88 84 70 84 48V22L50 8Z" stroke="url(#gYipShieldNav)" stroke-width="4" fill="#030712"/>
-  <path d="M32 30L50 48M68 30L50 48" stroke="#38bdf8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M50 48V76" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
-  <circle cx="50" cy="24" r="3.5" fill="#38bdf8"/>
-  <path d="M50 48H65C72 48 77 53 77 60C77 67 72 72 65 72H50" stroke="#10b981" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#fGoldGlow)">
+    <!-- Outer Heavy Beveled Gold Rim -->
+    <path d="M60 8 L18 24 V58 C18 84 36 104 60 112 C84 104 102 84 102 58 V24 L60 8 Z" fill="url(#goldHeavy)"/>
+    <!-- Inner Dark Glass Inset with Bevel Rim -->
+    <path d="M60 14 L23 28 V58 C23 80 39 99 60 106 C81 99 97 80 97 58 V28 L60 14 Z" fill="#030712"/>
+    <path d="M60 16 L25 30 V58 C25 78 40 96 60 103 C80 96 95 78 95 58 V30 L60 16 Z" fill="url(#obsidianGlass)"/>
+    
+    <!-- Top 24k Diamond Star -->
+    <path d="M60 22 L63 29 H70 L64.5 33 L66.5 40 L60 36 L53.5 40 L55.5 33 L50 29 H57 L60 22 Z" fill="url(#goldHeavy)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.5))"/>
+
+    <!-- Sculpted Metallic Gold Y I P Monogram -->
+    <!-- Drop Shadow for Letters -->
+    <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.9))">
+      <!-- Y -->
+      <path d="M35 48 L45 60 V78 M55 48 L45 60" stroke="#78350f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M35 48 L45 60 V78 M55 48 L45 60" stroke="url(#goldHeavy)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- I -->
+      <path d="M60 48 V78" stroke="#78350f" stroke-width="6" stroke-linecap="round"/>
+      <path d="M60 48 V78" stroke="url(#goldHeavy)" stroke-width="4" stroke-linecap="round"/>
+      
+      <!-- P -->
+      <path d="M72 78 V48 H82 C88 48 91 51.5 91 57 C91 62.5 88 66 82 66 H72" stroke="#78350f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M72 78 V48 H82 C88 48 91 51.5 91 57 C91 62.5 88 66 82 66 H72" stroke="url(#goldHeavy)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Lower Golden Arc Filigree -->
+    <path d="M38 88 C48 94 72 94 82 88" stroke="url(#goldHeavy)" stroke-width="2" stroke-linecap="round"/>
+  </g>
 </svg>`,
-      hexagon: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      faceted_crystal: `<svg class="active-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gYipHexNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" />
-      <stop offset="100%" stop-color="#3b82f6" />
+    <filter id="fGlow1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0284c7" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="facetTL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="facetTR" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="facetBL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="facetBR" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
     </linearGradient>
   </defs>
-  <path d="M50 8L86 28V72L50 92L14 72V28L50 8Z" stroke="url(#gYipHexNav)" stroke-width="3.5" fill="rgba(6,182,212,0.06)"/>
-  <path d="M26 34L35 48V66M44 34L35 48" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M51 34V66" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
-  <circle cx="51" cy="27" r="2.5" fill="#38bdf8"/>
-  <path d="M62 66V34H73C78.5 34 82 37.5 82 43C82 48.5 78.5 52 73 52H62" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Outer Glow Shadow -->
+  <g filter="url(#fGlow1)">
+    <!-- Base Shield -->
+    <path d="M60 8 L18 24 V58 C18 84 36 104 60 112 C84 104 102 84 102 58 V24 L60 8 Z" fill="#030712" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+    
+    <!-- 3D Shaded Facets -->
+    <!-- Top-Left Facet (Brightest Highlight) -->
+    <path d="M60 12 L22 26 V56 L60 52 Z" fill="url(#facetTL)" opacity="0.95"/>
+    <!-- Top-Right Facet (Midtone) -->
+    <path d="M60 12 L98 26 V56 L60 52 Z" fill="url(#facetTR)" opacity="0.85"/>
+    <!-- Bottom-Left Facet (Deep Azure) -->
+    <path d="M22 56 C22 79 38 98 60 108 L60 52 Z" fill="url(#facetBL)" opacity="0.9"/>
+    <!-- Bottom-Right Facet (Dark Shadow/Occlusion) -->
+    <path d="M98 56 C98 79 82 98 60 108 L60 52 Z" fill="url(#facetBR)" opacity="0.95"/>
+    
+    <!-- Facet Seams (Light Refraction) -->
+    <path d="M60 12 V108 M22 56 L98 56" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <path d="M60 12 L22 26 M60 12 L98 26" stroke="white" stroke-width="2"/>
+
+    <!-- Central Floating 3D Badge -->
+    <rect x="28" y="36" width="64" height="48" rx="14" fill="#030712" stroke="url(#goldAcc)" stroke-width="2" filter="drop-shadow(0 6px 8px rgba(0,0,0,0.8))"/>
+    
+    <!-- 3D Beveled Y I P Monogram -->
+    <!-- Y -->
+    <path d="M36 46 L44 58 V72 M52 46 L44 58" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36 46 L44 58 V72 M52 46 L44 58" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- I -->
+    <path d="M59 46 V72" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M59 46 V72" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- P -->
+    <path d="M70 72 V46 H79 C84.5 46 88 49 88 54 C88 59 84.5 62 79 62 H70" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M70 72 V46 H79 C84.5 46 88 49 88 54 C88 59 84.5 62 79 62 H70" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>`,
-      ligature: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      sapphire_glass: `<svg class="active-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gYipLigNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#0ea5e9" />
+    <filter id="fGlassGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#38bdf8" flood-opacity="0.5"/>
+    </filter>
+    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="glassFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.25)"/>
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.85)"/>
     </linearGradient>
   </defs>
-  <circle cx="50" cy="50" r="42" stroke="url(#gYipLigNav)" stroke-width="3.5" fill="rgba(15,23,42,0.85)"/>
-  <path d="M24 35L36 50V68M46 35L37.5 48" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M50 35V68" stroke="#a5b4fc" stroke-width="4.5" stroke-linecap="round"/>
-  <path d="M60 68V35H73C79 35 83 39 83 45C83 51 79 55 73 55H60" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M20 78H80" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-linecap="round"/>
+  <g filter="url(#fGlassGlow)">
+    <!-- Outer Floating Neon Hexagon -->
+    <path d="M60 8 L104 32 V88 L60 112 L16 88 V32 L60 8 Z" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="3"/>
+    <!-- Inner Prism Edge -->
+    <path d="M60 16 L96 36 V84 L60 104 L24 84 V36 L60 16 Z" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+
+    <!-- High-Definition YIP Sculpted Mark -->
+    <!-- Integrated Y-I-P Fusion -->
+    <path d="M38 42 L60 60 L82 42" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.8))"/>
+    <path d="M38 42 L60 60 L82 42" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Center I Column -->
+    <path d="M60 60 V90" stroke="white" stroke-width="6" stroke-linecap="round" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.8))"/>
+    <path d="M60 60 V90" stroke="#818cf8" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Right P Loop -->
+    <path d="M60 60 H76 C83 60 88 65 88 72 C88 79 83 84 76 84 H60" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.8))"/>
+    <path d="M60 60 H76 C83 60 88 65 88 72 C88 79 83 84 76 84 H60" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>`,
-      crest: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      florida_emerald: `<svg class="active-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gYipCrestNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="50%" stop-color="#0ea5e9" />
-      <stop offset="100%" stop-color="#3b82f6" />
+    <filter id="fEmeraldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#059669" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="emeraldHeavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="40%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="goldFiligree" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
     </linearGradient>
   </defs>
-  <path d="M50 6L18 20V50C18 72 32 88 50 94C68 88 82 72 82 50V20L50 6Z" fill="rgba(16,185,129,0.08)" stroke="url(#gYipCrestNav)" stroke-width="3.5"/>
-  <path d="M50 16L51.5 20H55.5L52.5 22.5L53.5 26.5L50 24L46.5 26.5L47.5 22.5L44.5 20H48.5L50 16Z" fill="#f59e0b"/>
-  <path d="M28 38L37 51V68M46 38L38 49" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M50 38V68" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round"/>
-  <path d="M60 68V38H72C77.5 38 81 41.5 81 47C81 52.5 77.5 56 72 56H60" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#fEmeraldGlow)">
+    <!-- Heavy Emerald Shield Body -->
+    <path d="M60 8 L18 24 V58 C18 84 36 104 60 112 C84 104 102 84 102 58 V24 L60 8 Z" fill="url(#emeraldHeavy)" stroke="url(#goldFiligree)" stroke-width="2.5"/>
+    <path d="M60 14 L24 28 V58 C24 80 39 98 60 105 C81 98 96 80 96 58 V28 L60 14 Z" fill="#022c22"/>
+
+    <!-- Sunburst Radiance Beams -->
+    <g opacity="0.35" stroke="url(#goldFiligree)" stroke-width="1.5">
+      <line x1="60" y1="40" x2="30" y2="20"/>
+      <line x1="60" y1="40" x2="45" y2="16"/>
+      <line x1="60" y1="40" x2="60" y2="14"/>
+      <line x1="60" y1="40" x2="75" y2="16"/>
+      <line x1="60" y1="40" x2="90" y2="20"/>
+    </g>
+
+    <!-- Florida Golden Palm Wings at Base -->
+    <path d="M30 88 C40 82 50 86 60 96 C70 86 80 82 90 88" stroke="url(#goldFiligree)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M36 82 C44 76 52 80 60 90 C68 80 76 76 84 82" stroke="url(#goldFiligree)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Central Sculpted Golden YIP -->
+    <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.85))">
+      <!-- Y -->
+      <path d="M36 44 L45 56 V74 M54 44 L45 56" stroke="url(#goldFiligree)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M36 44 L45 56 V74 M54 44 L45 56" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- I -->
+      <path d="M60 44 V74" stroke="url(#goldFiligree)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M60 44 V74" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="60" cy="38" r="2.5" fill="#fde047"/>
+      
+      <!-- P -->
+      <path d="M71 74 V44 H81 C86.5 44 89.5 47.5 89.5 53 C89.5 58.5 86.5 62 81 62 H71" stroke="url(#goldFiligree)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M71 74 V44 H81 C86.5 44 89.5 47.5 89.5 53 C89.5 58.5 86.5 62 81 62 H71" stroke="#fef08a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
 </svg>`,
-      delta: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      titanium_cyber: `<svg class="active-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gDeltaNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#3b82f6" />
+    <filter id="fNeonCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#06b6d4" flood-opacity="0.6"/>
+    </filter>
+    <linearGradient id="tiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
     </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <pattern id="carbonPat" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#090d16"/>
+      <rect width="3" height="3" fill="#131c2e"/>
+      <rect x="3" y="3" width="3" height="3" fill="#1e293b"/>
+    </pattern>
   </defs>
-  <path d="M50 10L90 82H10L50 10Z" stroke="url(#gDeltaNav)" stroke-width="3.5" fill="rgba(56,189,248,0.06)"/>
-  <path d="M30 42L40 54V72M50 42L40 54" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M52 42V72" stroke="white" stroke-width="4" stroke-linecap="round"/>
-  <path d="M62 72V42H73C78 42 81 45.5 81 50.5C81 55.5 78 59 73 59H62" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#fNeonCyan)">
+    <!-- Heavy Titanium Hexagon Frame -->
+    <path d="M60 8 L104 32 V88 L60 112 L16 88 V32 L60 8 Z" fill="url(#tiGrad)" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Carbon Fiber Backplate -->
+    <path d="M60 14 L98 35 V85 L60 106 L22 85 V35 L60 14 Z" fill="url(#carbonPat)"/>
+    
+    <!-- Neon Underglow Race Line -->
+    <path d="M60 18 L94 37 V83 L60 102 L26 83 V37 L60 18 Z" stroke="url(#neonCyan)" stroke-width="2" fill="none" opacity="0.9"/>
+    
+    <!-- Industrial Bolt Rivets -->
+    <circle cx="60" cy="11" r="2.5" fill="#e2e8f0"/>
+    <circle cx="101" cy="34" r="2.5" fill="#e2e8f0"/>
+    <circle cx="101" cy="86" r="2.5" fill="#e2e8f0"/>
+    <circle cx="60" cy="109" r="2.5" fill="#e2e8f0"/>
+    <circle cx="19" cy="86" r="2.5" fill="#e2e8f0"/>
+    <circle cx="19" cy="34" r="2.5" fill="#e2e8f0"/>
+
+    <!-- High-Impact CNC Beveled YIP Mark -->
+    <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.95))">
+      <!-- Background Glow Plate -->
+      <rect x="28" y="44" width="64" height="34" rx="8" fill="#030712" stroke="#38bdf8" stroke-width="1.5"/>
+      <!-- Neon Monogram Text -->
+      <text x="60" y="69" fill="white" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="22" text-anchor="middle" letter-spacing="3">YIP</text>
+      <text x="60" y="69" fill="url(#neonCyan)" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="22" text-anchor="middle" letter-spacing="3" opacity="0.3">YIP</text>
+      <!-- Sub-label Tech Bar -->
+      <path d="M36 74 H84" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
 </svg>`,
-      rings: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      origami_ribbon: `<svg class="active-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gRingsNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0ea5e9" />
-      <stop offset="100%" stop-color="#2563eb" />
+    <filter id="fRibbonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#6366f1" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="ribbonY1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="ribbonY2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="ribbonI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="ribbonP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
     </linearGradient>
   </defs>
-  <rect x="8" y="18" width="84" height="64" rx="20" stroke="rgba(255,255,255,0.12)" stroke-width="2" fill="#050b18"/>
-  <rect x="12" y="22" width="76" height="56" rx="16" fill="rgba(14,165,233,0.06)"/>
-  <path d="M24 36L34 50V64M44 36L34 50" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M50 36V64" stroke="#10b981" stroke-width="4.5" stroke-linecap="round"/>
-  <circle cx="50" cy="30" r="2.5" fill="#10b981"/>
-  <path d="M60 64V36H72C77 36 80 39.5 80 44.5C80 49.5 77 53 72 53H60" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#fRibbonGlow)">
+    <!-- Base Circular Dark Disc with Gradient Rim -->
+    <circle cx="60" cy="60" r="50" fill="#040817" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+    <circle cx="60" cy="60" r="48" stroke="url(#ribbonY1)" stroke-width="1.5" opacity="0.3"/>
+
+    <!-- Continuous 3D Origami Folds -->
+    <!-- Letter Y Left Fold -->
+    <path d="M26 36 L44 58 L44 84 L36 84 L36 62 L20 42 Z" fill="url(#ribbonY1)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.5))"/>
+    <!-- Letter Y Right Fold (Overlaps Left) -->
+    <path d="M52 36 L44 58 L44 84 L48 84 L58 42 Z" fill="url(#ribbonY2)"/>
+    
+    <!-- Cast Shadow under Y -->
+    <path d="M44 58 L48 84 L40 84 Z" fill="#020617" opacity="0.6"/>
+
+    <!-- Letter I (Center Column with Top Bevel) -->
+    <path d="M56 36 H64 V84 H56 Z" fill="url(#ribbonI)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.5))"/>
+    <polygon points="56,36 60,30 68,30 64,36" fill="#e0e7ff"/>
+
+    <!-- Letter P (Right Sweeping 3D Loop) -->
+    <path d="M72 84 V36 H86 C94 36 99 41 99 49 C99 57 94 62 86 62 H72" stroke="url(#ribbonP)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.6))"/>
+    <path d="M72 84 V36 H86 C94 36 99 41 99 49 C99 57 94 62 86 62 H72" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  </g>
 </svg>`,
-      armor: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      vault_fortress: `<svg class="active-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gArmorNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2563eb" />
-      <stop offset="100%" stop-color="#0284c7" />
+    <filter id="fVaultGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#f59e0b" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="vaultSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="30%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
     </linearGradient>
   </defs>
-  <path d="M50 6L14 20V50C14 74 30 90 50 96C70 90 86 74 86 50V20L50 6Z" fill="url(#gArmorNav)"/>
-  <path d="M50 14L22 26V50C22 70 34 83 50 88C66 83 78 70 78 50V26L50 14Z" fill="#030712"/>
-  <text x="50" y="58" fill="white" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="24" text-anchor="middle" letter-spacing="2">YIP</text>
-  <path d="M32 66H68" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  <g filter="url(#fVaultGlow)">
+    <!-- Outer Heavy Heavy Gear Disc -->
+    <circle cx="60" cy="60" r="52" fill="url(#vaultSteel)" stroke="url(#brassGrad)" stroke-width="3"/>
+    <!-- Outer Radial Indicator Grooves -->
+    <circle cx="60" cy="60" r="44" stroke="rgba(255,255,255,0.15)" stroke-width="4" stroke-dasharray="4 6"/>
+    <!-- Tumbler Ring -->
+    <circle cx="60" cy="60" r="36" fill="#030712" stroke="url(#brassGrad)" stroke-width="2"/>
+    
+    <!-- 4 Heavy Vault Locking Lugs -->
+    <rect x="56" y="10" width="8" height="8" rx="2" fill="url(#brassGrad)"/>
+    <rect x="102" y="56" width="8" height="8" rx="2" fill="url(#brassGrad)"/>
+    <rect x="56" y="102" width="8" height="8" rx="2" fill="url(#brassGrad)"/>
+    <rect x="10" y="56" width="8" height="8" rx="2" fill="url(#brassGrad)"/>
+
+    <!-- Heavy Beveled Chrome YIP Monogram -->
+    <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.9))">
+      <text x="60" y="69" fill="url(#brassGrad)" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="24" text-anchor="middle" letter-spacing="3">YIP</text>
+      <text x="60" y="68" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="24" text-anchor="middle" letter-spacing="3" opacity="0.3">YIP</text>
+    </g>
+  </g>
 </svg>`,
-      wings: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      aero_falcon: `<svg class="active-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gWingsNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" />
-      <stop offset="50%" stop-color="#3b82f6" />
-      <stop offset="100%" stop-color="#10b981" />
+    <filter id="fAeroGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0284c7" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="aeroGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+    <linearGradient id="aeroGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#064e3b"/>
     </linearGradient>
   </defs>
-  <path d="M12 28L48 50L16 66L24 50L12 28Z" fill="rgba(6,182,212,0.3)"/>
-  <path d="M88 28L52 50L84 66L76 50L88 28Z" fill="rgba(16,185,129,0.3)"/>
-  <circle cx="50" cy="50" r="26" fill="#030712" stroke="url(#gWingsNav)" stroke-width="3"/>
-  <text x="50" y="57" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="18" text-anchor="middle" letter-spacing="1.5">YIP</text>
-</svg>`,
-      circuit: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="gCircuitNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#06b6d4" />
-    </linearGradient>
-  </defs>
-  <rect x="12" y="12" width="76" height="76" rx="22" fill="#030712" stroke="url(#gCircuitNav)" stroke-width="3"/>
-  <circle cx="25" cy="25" r="4" fill="#10b981"/>
-  <path d="M25 25L38 38H62L75 25" stroke="rgba(16,185,129,0.4)" stroke-width="2"/>
-  <circle cx="75" cy="25" r="4" fill="#06b6d4"/>
-  <path d="M26 44L36 56V72M46 44L36 56" stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M51 44V72" stroke="white" stroke-width="4" stroke-linecap="round"/>
-  <path d="M62 72V44H74C79 44 82 47.5 82 52.5C82 57.5 79 61 74 61H62" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>`,
-      wave: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="gWaveNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0ea5e9" />
-      <stop offset="50%" stop-color="#06b6d4" />
-      <stop offset="100%" stop-color="#10b981" />
-    </linearGradient>
-  </defs>
-  <circle cx="50" cy="50" r="42" fill="#030712" stroke="url(#gWaveNav)" stroke-width="3.5"/>
-  <path d="M16 68C26 60 36 74 50 68C64 62 74 74 84 68" stroke="url(#gWaveNav)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M26 30L36 44V58M46 30L36 44" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M51 30V58" stroke="white" stroke-width="4" stroke-linecap="round"/>
-  <path d="M62 58V30H73C78 30 81 33.5 81 38.5C81 43.5 78 47 73 47H62" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>`,
-      vault: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="gVaultNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b" />
-      <stop offset="50%" stop-color="#3b82f6" />
-      <stop offset="100%" stop-color="#0ea5e9" />
-    </linearGradient>
-  </defs>
-  <circle cx="50" cy="50" r="42" stroke="url(#gVaultNav)" stroke-width="4" fill="#060a16"/>
-  <circle cx="50" cy="14" r="3" fill="#f59e0b"/>
-  <circle cx="86" cy="50" r="3" fill="#38bdf8"/>
-  <circle cx="50" cy="86" r="3" fill="#3b82f6"/>
-  <circle cx="14" cy="50" r="3" fill="#38bdf8"/>
-  <circle cx="50" cy="50" r="28" stroke="rgba(255,255,255,0.12)" stroke-width="2" stroke-dasharray="4 4"/>
-  <text x="50" y="58" fill="white" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="21" text-anchor="middle" letter-spacing="2">YIP</text>
-</svg>`,
-      minimal: `<svg class="active-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="gMinNav" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#10b981" />
-    </linearGradient>
-  </defs>
-  <rect x="8" y="16" width="84" height="68" rx="16" fill="#050a18" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
-  <path d="M22 34L33 48V66M44 34L33 48" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M51 34V66" stroke="white" stroke-width="5" stroke-linecap="round"/>
-  <path d="M61 66V34H74C80 34 84 38 84 44C84 50 80 54 74 54H61" stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="74" cy="44" r="3" fill="#030712"/>
+  <g filter="url(#fAeroGlow)">
+    <!-- Aerodynamic Layered Wings -->
+    <!-- Left Wing (Top Layer) -->
+    <path d="M10 32 L56 56 L20 72 L28 56 L10 32 Z" fill="url(#aeroGrad1)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <!-- Left Wing (Sub Layer) -->
+    <path d="M18 44 L56 62 L26 78 L18 44 Z" fill="#0369a1" opacity="0.6"/>
+
+    <!-- Right Wing (Top Layer) -->
+    <path d="M110 32 L64 56 L100 72 L92 56 L110 32 Z" fill="url(#aeroGrad2)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <!-- Right Wing (Sub Layer) -->
+    <path d="M102 44 L64 62 L94 78 L102 44 Z" fill="#047857" opacity="0.6"/>
+
+    <!-- Central High-Tech Shield Pod -->
+    <path d="M60 22 L44 38 V74 L60 94 L76 74 V38 L60 22 Z" fill="#030712" stroke="white" stroke-width="2" filter="drop-shadow(0 6px 10px rgba(0,0,0,0.8))"/>
+    
+    <!-- Bold Metallic YIP Text in Pod -->
+    <text x="60" y="64" fill="white" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="16" text-anchor="middle" letter-spacing="1.5">YIP</text>
+    <circle cx="60" cy="78" r="2.5" fill="#38bdf8"/>
+  </g>
 </svg>`,
     };
     function setLogo(key, pillEl) {
@@ -1651,4 +2023,53 @@
     }
   </script>
 </body>
-</html>
+</html><div class="nav-logo-icon" id="navLogoWrapper">
+          <svg class="active-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="fGoldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#ca8a04" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="goldHeavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="25%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="75%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <radialGradient id="obsidianGlass" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+  </defs>
+  <g filter="url(#fGoldGlow)">
+    <!-- Outer Heavy Beveled Gold Rim -->
+    <path d="M60 8 L18 24 V58 C18 84 36 104 60 112 C84 104 102 84 102 58 V24 L60 8 Z" fill="url(#goldHeavy)"/>
+    <!-- Inner Dark Glass Inset with Bevel Rim -->
+    <path d="M60 14 L23 28 V58 C23 80 39 99 60 106 C81 99 97 80 97 58 V28 L60 14 Z" fill="#030712"/>
+    <path d="M60 16 L25 30 V58 C25 78 40 96 60 103 C80 96 95 78 95 58 V30 L60 16 Z" fill="url(#obsidianGlass)"/>
+    
+    <!-- Top 24k Diamond Star -->
+    <path d="M60 22 L63 29 H70 L64.5 33 L66.5 40 L60 36 L53.5 40 L55.5 33 L50 29 H57 L60 22 Z" fill="url(#goldHeavy)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.5))"/>
+
+    <!-- Sculpted Metallic Gold Y I P Monogram -->
+    <!-- Drop Shadow for Letters -->
+    <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.9))">
+      <!-- Y -->
+      <path d="M35 48 L45 60 V78 M55 48 L45 60" stroke="#78350f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M35 48 L45 60 V78 M55 48 L45 60" stroke="url(#goldHeavy)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- I -->
+      <path d="M60 48 V78" stroke="#78350f" stroke-width="6" stroke-linecap="round"/>
+      <path d="M60 48 V78" stroke="url(#goldHeavy)" stroke-width="4" stroke-linecap="round"/>
+      
+      <!-- P -->
+      <path d="M72 78 V48 H82 C88 48 91 51.5 91 57 C91 62.5 88 66 82 66 H72" stroke="#78350f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M72 78 V48 H82 C88 48 91 51.5 91 57 C91 62.5 88 66 82 66 H72" stroke="url(#goldHeavy)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Lower Golden Arc Filigree -->
+    <path d="M38 88 C48 94 72 94 82 88" stroke="url(#goldHeavy)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
+        

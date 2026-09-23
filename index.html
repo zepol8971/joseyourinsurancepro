@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Insurance Pro | Florida Independent Insurance Agency</title>
+  <meta name="description" content="Your trusted Florida independent insurance agency. Custom quote intake for Commercial, Homeowners, Flood, Auto, and Life insurance. Fast, competitive quotes across top carriers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-hover: #172554;
+      --secondary: #0ea5e9;
+      --accent: #10b981;
+      --accent-gold: #f59e0b;
+      --bg: #0b1120;
+      --card-bg: rgba(17, 24, 39, 0.85);
+      --card-border: rgba(255, 255, 255, 0.1);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --gradient-brand: linear-gradient(135deg, #2563eb 0%, #0ea5e9 50%, #10b981 100%);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.18) 0%, transparent 40%),
+        radial-gradient(circle at 90% 25%, rgba(14, 165, 233, 0.15) 0%, transparent 45%),
+        radial-gradient(circle at 50% 85%, rgba(16, 185, 129, 0.12) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    h1, h2, h3, h4, .brand-logo {
+      font-family: 'Outfit', sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      background: rgba(11, 17, 32, 0.9);
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 78px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.4rem;
+    }
+
+    .logo-badge {
+      background: var(--gradient-brand);
+      color: white;
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      font-weight: 900;
+      box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-main);
+    }
+
+    .nav-btn {
+      background: var(--gradient-brand);
+      color: white;
+      padding: 10px 22px;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 80px 0 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    .tag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(37, 99, 235, 0.15);
+      border: 1px solid rgba(37, 99, 235, 0.3);
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #60a5fa;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.15;
+      font-weight: 900;
+      margin-bottom: 24px;
+    }
+
+    .gradient-text {
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-sub {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 740px;
+      margin: 0 auto 36px;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    .btn-primary-lg {
+      background: var(--gradient-brand);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-primary-lg:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.55);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      padding: 14px 28px;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Trust / Features Bar */
+    .trust-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      background: rgba(17, 24, 39, 0.65);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 24px 32px;
+      backdrop-filter: blur(12px);
+      margin-bottom: 70px;
+      text-align: left;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .trust-icon {
+      font-size: 1.6rem;
+      background: rgba(37, 99, 235, 0.2);
+      padding: 8px;
+      border-radius: var(--radius-sm);
+      color: #60a5fa;
+    }
+
+    .trust-text h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .trust-text p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-header h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    /* Coverage Cards */
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-bottom: 80px;
+    }
+
+    .coverage-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 30px 26px;
+      backdrop-filter: blur(12px);
+      transition: transform 0.3s, border-color 0.3s;
+      cursor: pointer;
+    }
+
+    .coverage-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(14, 165, 233, 0.5);
+    }
+
+    .coverage-card.active {
+      border: 2px solid #0ea5e9;
+      background: rgba(14, 165, 233, 0.08);
+    }
+
+    .coverage-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: var(--radius-md);
+      background: rgba(37, 99, 235, 0.2);
+      border: 1px solid rgba(37, 99, 235, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+    }
+
+    .coverage-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .coverage-card p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .coverage-link {
+      color: #38bdf8;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* RATER & AMS LEAD INTAKE ENGINE */
+    .intake-section {
+      background: rgba(15, 23, 42, 0.92);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      backdrop-filter: blur(20px);
+      margin-bottom: 90px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 860px) {
+      .intake-section {
+        padding: 24px 18px;
+      }
+    }
+
+    /* Line Selector Tabs */
+    .line-tabs {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 16px;
+    }
+
+    .line-tab {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 10px 20px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .line-tab.active {
+      background: var(--gradient-brand);
+      color: white;
+      border-color: transparent;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.88rem;
+      margin-bottom: 6px;
+      color: #e2e8f0;
+    }
+
+    .form-control {
+      width: 100%;
+      background: rgba(11, 17, 32, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      color: white;
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: #0ea5e9;
+      box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.25);
+    }
+
+    select.form-control option {
+      background: #0b1120;
+      color: white;
+    }
+
+    .form-checkbox-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      cursor: pointer;
+      border: 1px solid var(--card-border);
+      transition: background 0.2s;
+    }
+
+    .checkbox-label:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Output Card / AMS Profile Preview */
+    .profile-card {
+      display: none;
+      background: #090d16;
+      border: 1px solid #10b981;
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-top: 30px;
+    }
+
+    .profile-card h4 {
+      color: #10b981;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+    }
+
+    .profile-json {
+      background: #040711;
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      font-family: monospace;
+      font-size: 0.82rem;
+      color: #38bdf8;
+      max-height: 250px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-break: break-all;
+      margin-bottom: 16px;
+    }
+
+    .profile-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-action-sm {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--card-border);
+      color: white;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .btn-action-sm:hover {
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 60px 0 36px;
+      background: rgba(8, 12, 22, 0.95);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    .footer-brand h4 {
+      font-size: 1.3rem;
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    .footer-links h5 {
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-inner">
+      <div class="logo-container">
+        <div class="logo-badge">🛡️</div>
+        <div>
+          <span style="color: white;">YOUR INSURANCE</span><span style="color: #38bdf8;"> PRO</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#lines">Coverage Lines</a>
+        <a href="#intake">Request a Quote</a>
+        <a href="#why-independent">Why Independent</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#intake" class="nav-btn">Start Quote Form</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="tag-badge">🌴 Florida Independent Insurance Agency</div>
+      <h1>
+        Protection Tailored For Your Business & Life<br>
+        <span class="gradient-text">Across Top-Rated Carriers</span>
+      </h1>
+      <p class="hero-sub">
+        Don't get stuck with a single carrier's rate. As an independent agency, Jose shops the commercial, property, auto, and life markets to find the exact coverage your family and business need.
+      </p>
+      <div class="hero-actions">
+        <a href="#intake" class="btn-primary-lg">
+          <span>⚡ Start Structured Quote Request</span>
+        </a>
+        <a href="tel:+19045631694" class="btn-secondary">📞 Call Jose: (904) 563-1694</a>
+      </div>
+
+      <!-- Trust Bar -->
+      <div class="trust-bar">
+        <div class="trust-item">
+          <div class="trust-icon">🏛️</div>
+          <div class="trust-text">
+            <h4>Independent Advantage</h4>
+            <p>We work for you, not the insurance companies.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">⚡</div>
+          <div class="trust-text">
+            <h4>Rater & Bot Ready</h4>
+            <p>Fast multi-carrier quoting with zero re-entry.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">📍</div>
+          <div class="trust-text">
+            <h4>Local Florida Experts</h4>
+            <p>Orange Park, Clay County & Statewide Coverage.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">💼</div>
+          <div class="trust-text">
+            <h4>Commercial & Personal</h4>
+            <p>Complete multi-line portfolio protection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insurance Lines -->
+  <section id="lines" class="container" style="padding-bottom: 20px;">
+    <div class="section-header">
+      <h2>Comprehensive Insurance Solutions</h2>
+      <p>Click on any line to launch its specific quote intake questionnaire.</p>
+    </div>
+
+    <div class="coverage-grid">
+      <!-- Commercial -->
+      <div class="coverage-card" onclick="selectLine('commercial')">
+        <div class="coverage-icon">🏢</div>
+        <h3>Commercial & Business</h3>
+        <p>General Liability, Commercial Property, Workers' Comp, Business Owners Policies (BOP), and Cyber Liability.</p>
+        <span class="coverage-link">Quote Commercial →</span>
+      </div>
+
+      <!-- Home & Flood -->
+      <div class="coverage-card" onclick="selectLine('home')">
+        <div class="coverage-icon">🏡</div>
+        <h3>Florida Home & Flood</h3>
+        <p>Homeowners (HO-3/HO-6), windstorm/hurricane, excess flood insurance, and landlord dwelling policies.</p>
+        <span class="coverage-link">Quote Property →</span>
+      </div>
+
+      <!-- Auto -->
+      <div class="coverage-card" onclick="selectLine('auto')">
+        <div class="coverage-icon">🚗</div>
+        <h3>Personal & Fleet Auto</h3>
+        <p>Bodily injury, comprehensive, collision, uninsured motorist, and commercial contractor fleet vehicles.</p>
+        <span class="coverage-link">Quote Auto →</span>
+      </div>
+
+      <!-- Life -->
+      <div class="coverage-card" onclick="selectLine('life')">
+        <div class="coverage-icon">🤝</div>
+        <h3>Life & Financial Security</h3>
+        <p>Term life (10, 20, 30 years), key-man business policies, whole life, and personal umbrella liability.</p>
+        <span class="coverage-link">Quote Life →</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MULTI-LINE LEAD INTAKE ENGINE (AMS-READY) -->
+  <section id="intake" class="container">
+    <div class="intake-section">
+      <div class="section-header" style="margin-bottom: 30px;">
+        <h2>Structured Lead & Rating Intake</h2>
+        <p>Complete the profile below. Your data generates a standardized customer profile ready for instant comparative rating.</p>
+      </div>
+
+      <!-- Line Selector Tabs -->
+      <div class="line-tabs">
+        <button class="line-tab active" id="tab-commercial" onclick="switchTab('commercial')">🏢 Commercial / Business</button>
+        <button class="line-tab" id="tab-home" onclick="switchTab('home')">🏡 Home & Property</button>
+        <button class="line-tab" id="tab-auto" onclick="switchTab('auto')">🚗 Personal / Commercial Auto</button>
+        <button class="line-tab" id="tab-life" onclick="switchTab('life')">🤝 Life & Health</button>
+      </div>
+
+      <!-- Main Form -->
+      <form id="leadForm" onsubmit="processLeadSubmission(event)">
+        
+        <!-- SECTION 1: Primary Contact (Always Visible) -->
+        <div style="margin-bottom: 28px; border-bottom: 1px solid var(--card-border); padding-bottom: 24px;">
+          <h4 style="color: #38bdf8; font-size: 1.1rem; margin-bottom: 16px;">1. Primary Insured / Contact Information</h4>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="contact_first_name">First Name *</label>
+              <input type="text" id="contact_first_name" class="form-control" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="contact_last_name">Last Name *</label>
+              <input type="text" id="contact_last_name" class="form-control" placeholder="Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="contact_email">Email Address *</label>
+              <input type="email" id="contact_email" class="form-control" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contact_phone">Primary Phone Number *</label>
+              <input type="tel" id="contact_phone" class="form-control" placeholder="(904) 555-0123" required />
+            </div>
+            <div class="form-group">
+              <label for="contact_dob">Date of Birth (Primary Insured)</label>
+              <input type="date" id="contact_dob" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="mailing_zip">Zip Code (Location) *</label>
+              <input type="text" id="mailing_zip" class="form-control" placeholder="32065" required />
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 2: Dynamic Line Specific Details -->
+        
+        <!-- COMMERCIAL FIELDS -->
+        <div id="fields-commercial" class="line-fields">
+          <h4 style="color: #38bdf8; font-size: 1.1rem; margin-bottom: 16px;">2. Commercial Risk Profile</h4>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="comm_biz_name">Business Legal Name *</label>
+              <input type="text" id="comm_biz_name" class="form-control" placeholder="Acme Logistics LLC" />
+            </div>
+            <div class="form-group">
+              <label for="comm_dba">DBA (If Applicable)</label>
+              <input type="text" id="comm_dba" class="form-control" placeholder="Acme Express" />
+            </div>
+            <div class="form-group">
+              <label for="comm_entity_type">Entity Structure</label>
+              <select id="comm_entity_type" class="form-control">
+                <option value="LLC">LLC</option>
+                <option value="Corporation">Corporation (S-Corp / C-Corp)</option>
+                <option value="Sole Proprietorship">Sole Proprietorship</option>
+                <option value="Partnership">Partnership</option>
+                <option value="Non-Profit">Non-Profit</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="comm_industry">Industry / Description of Operations</label>
+              <input type="text" id="comm_industry" class="form-control" placeholder="e.g. Electrical Contractor, Event Production, Retail" />
+            </div>
+            <div class="form-group">
+              <label for="comm_years_in_biz">Years in Business</label>
+              <input type="number" id="comm_years_in_biz" class="form-control" placeholder="3" min="0" />
+            </div>
+            <div class="form-group">
+              <label for="comm_annual_revenue">Estimated Gross Annual Revenue ($)</label>
+              <input type="number" id="comm_annual_revenue" class="form-control" placeholder="250000" />
+            </div>
+            <div class="form-group">
+              <label for="comm_employees">Number of Employees (Full & Part Time)</label>
+              <input type="number" id="comm_employees" class="form-control" placeholder="4" min="0" />
+            </div>
+            <div class="form-group">
+              <label for="comm_annual_payroll">Estimated Annual Payroll ($)</label>
+              <input type="number" id="comm_annual_payroll" class="form-control" placeholder="95000" />
+            </div>
+            
+            <div class="form-group full-width">
+              <label>Select Coverages Requested:</label>
+              <div class="form-checkbox-grid">
+                <label class="checkbox-label"><input type="checkbox" id="cov_gl" checked /> General Liability</label>
+                <label class="checkbox-label"><input type="checkbox" id="cov_wc" /> Workers' Compensation</label>
+                <label class="checkbox-label"><input type="checkbox" id="cov_bop" /> Business Owner Policy (BOP)</label>
+                <label class="checkbox-label"><input type="checkbox" id="cov_comm_auto" /> Commercial Auto / Fleet</label>
+                <label class="checkbox-label"><input type="checkbox" id="cov_cyber" /> Cyber Liability</label>
+                <label class="checkbox-label"><input type="checkbox" id="cov_inland_marine" /> Tools & Equipment (Inland Marine)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HOME FIELDS -->
+        <div id="fields-home" class="line-fields" style="display: none;">
+          <h4 style="color: #38bdf8; font-size: 1.1rem; margin-bottom: 16px;">2. Home & Property Risk Profile</h4>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="home_address">Property Street Address *</label>
+              <input type="text" id="home_address" class="form-control" placeholder="1234 Oakleaf Village Pkwy, Orange Park, FL" />
+            </div>
+            <div class="form-group">
+              <label for="home_year_built">Year Built</label>
+              <input type="number" id="home_year_built" class="form-control" placeholder="2018" />
+            </div>
+            <div class="form-group">
+              <label for="home_sqft">Square Footage</label>
+              <input type="number" id="home_sqft" class="form-control" placeholder="2400" />
+            </div>
+            <div class="form-group">
+              <label for="home_roof_year">Roof Replacement Year</label>
+              <input type="number" id="home_roof_year" class="form-control" placeholder="2020" />
+            </div>
+            <div class="form-group">
+              <label for="home_roof_type">Roof Type</label>
+              <select id="home_roof_type" class="form-control">
+                <option value="Architectural Shingle">Architectural Shingle</option>
+                <option value="Tile">Tile / Spanish Clay</option>
+                <option value="Metal">Standing Seam Metal</option>
+                <option value="Flat">Flat / Membrane</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="home_construction">Construction Type</label>
+              <select id="home_construction" class="form-control">
+                <option value="Masonry / Stucco">Masonry / Concrete Block (Stucco)</option>
+                <option value="Frame">Wood Frame</option>
+                <option value="Steel">Steel / Reinforced</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="home_prior_claims">Prior Losses / Claims in Past 5 Years?</label>
+              <select id="home_prior_claims" class="form-control">
+                <option value="None">None</option>
+                <option value="1 Claim">1 Claim</option>
+                <option value="2+ Claims">2 or more Claims</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- AUTO FIELDS -->
+        <div id="fields-auto" class="line-fields" style="display: none;">
+          <h4 style="color: #38bdf8; font-size: 1.1rem; margin-bottom: 16px;">2. Vehicle & Driver Profile</h4>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="auto_year">Vehicle Year</label>
+              <input type="number" id="auto_year" class="form-control" placeholder="2022" />
+            </div>
+            <div class="form-group">
+              <label for="auto_make">Make</label>
+              <input type="text" id="auto_make" class="form-control" placeholder="Ford / Toyota / Tesla" />
+            </div>
+            <div class="form-group">
+              <label for="auto_model">Model</label>
+              <input type="text" id="auto_model" class="form-control" placeholder="F-150 / RAV4 / Model Y" />
+            </div>
+            <div class="form-group">
+              <label for="auto_vin">VIN (Vehicle Identification Number)</label>
+              <input type="text" id="auto_vin" class="form-control" placeholder="17-Digit VIN (Optional for rough quote)" />
+            </div>
+            <div class="form-group">
+              <label for="auto_use">Primary Vehicle Use</label>
+              <select id="auto_use" class="form-control">
+                <option value="Commute">Commute to Work / School</option>
+                <option value="Pleasure">Pleasure / Personal</option>
+                <option value="Business / Commercial">Business / Artisan / Contractor</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="auto_annual_miles">Annual Mileage</label>
+              <input type="number" id="auto_annual_miles" class="form-control" placeholder="12000" />
+            </div>
+            <div class="form-group">
+              <label for="auto_driver_history">Violations / Accidents in Past 3 Years?</label>
+              <select id="auto_driver_history" class="form-control">
+                <option value="Clean Record">Clean Record (No accidents/tickets)</option>
+                <option value="1 Minor Ticket">1 Minor Speeding/Traffic Ticket</option>
+                <option value="1 At-Fault Accident">1 At-Fault Accident</option>
+                <option value="Multiple">Multiple Incidents</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="auto_liability_limit">Target Liability Limits</label>
+              <select id="auto_liability_limit" class="form-control">
+                <option value="100k/300k/100k">100k / 300k / 100k (Recommended)</option>
+                <option value="250k/500k/250k">250k / 500k / 250k (High Asset Protection)</option>
+                <option value="50k/100k/50k">50k / 100k / 50k</option>
+                <option value="State Minimum">Florida State Minimum</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- LIFE FIELDS -->
+        <div id="fields-life" class="line-fields" style="display: none;">
+          <h4 style="color: #38bdf8; font-size: 1.1rem; margin-bottom: 16px;">2. Life & Financial Security Profile</h4>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="life_coverage_amount">Desired Benefit / Coverage Amount</label>
+              <select id="life_coverage_amount" class="form-control">
+                <option value="250000">$250,000</option>
+                <option value="500000" selected>$500,000</option>
+                <option value="1000000">$1,000,000</option>
+                <option value="2000000">$2,000,000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="life_term">Policy Type & Term Length</label>
+              <select id="life_term" class="form-control">
+                <option value="20 Year Term">20-Year Level Term</option>
+                <option value="10 Year Term">10-Year Level Term</option>
+                <option value="30 Year Term">30-Year Level Term</option>
+                <option value="Permanent / Whole Life">Permanent / Whole Life</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="life_tobacco">Tobacco / Nicotine Usage?</label>
+              <select id="life_tobacco" class="form-control">
+                <option value="Non-Smoker / Never">Non-Smoker (Never used)</option>
+                <option value="Quit > 3 Years Ago">Quit > 3 Years Ago</option>
+                <option value="Current Smoker / Vaper">Current Tobacco / Vape User</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="life_health_status">Overall Health Assessment</label>
+              <select id="life_health_status" class="form-control">
+                <option value="Preferred Plus">Excellent (No major conditions or medications)</option>
+                <option value="Standard">Good (Well-managed conditions)</option>
+                <option value="Substandard">Specialized / Rated</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 3: Current Policy & Notes -->
+        <div style="margin-top: 24px; margin-bottom: 28px;">
+          <h4 style="color: #38bdf8; font-size: 1.1rem; margin-bottom: 16px;">3. Current Carrier & Policy Target</h4>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="prior_carrier">Current Insurance Carrier (If any)</label>
+              <input type="text" id="prior_carrier" class="form-control" placeholder="e.g. State Farm, Travelers, Progressive, Citizens" />
+            </div>
+            <div class="form-group">
+              <label for="policy_exp_date">Target Effective / Renewal Date</label>
+              <input type="date" id="policy_exp_date" class="form-control" />
+            </div>
+            <div class="form-group full-width">
+              <label for="client_notes">Additional Details or Specific Requirements</label>
+              <textarea id="client_notes" class="form-control" rows="3" placeholder="Tell us any specific concerns, recent changes, certificate requirements, or goals."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submission Button -->
+        <button type="submit" class="btn-primary-lg" style="width: 100%; justify-content: center; border: none; cursor: pointer; font-size: 1.05rem;">
+          🚀 Submit Lead & Generate AMS Customer Profile
+        </button>
+      </form>
+
+      <!-- AMS PROFILE PREVIEW & BOT EXPORT -->
+      <div id="amsProfileCard" class="profile-card">
+        <h4>✅ Standardized Customer Profile Generated (AMS & Quoting Bot Ready)</h4>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 14px;">
+          This structured payload conforms to standard insurance AMS / Rater schema. It has been stored and can be piped directly into your comparative rater or quoting bot.
+        </p>
+        <div id="amsJsonDisplay" class="profile-json"></div>
+        <div class="profile-actions">
+          <button class="btn-action-sm" onclick="copyAmsJson()">📋 Copy JSON Profile</button>
+          <button class="btn-action-sm" onclick="downloadAmsJson()">💾 Download JSON File</button>
+          <a id="emailAgentBtn" href="#" class="btn-action-sm" style="background: rgba(14, 165, 233, 0.25); border-color: #0ea5e9;">
+            ✉️ Email Profile to Jose
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose An Independent Agency -->
+  <section id="why-independent" class="container" style="margin-bottom: 90px;">
+    <div class="section-header">
+      <h2>The Independent Agency Difference</h2>
+      <p>Why Florida business owners and families trust Your Insurance Pro over captive direct writers.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+      <div style="background: var(--card-bg); border: 1px solid var(--card-border); padding: 32px; border-radius: var(--radius-lg);">
+        <h3 style="color: #ef4444; margin-bottom: 12px; font-size: 1.3rem;">❌ Captive Agents</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 12px;">Represent only ONE carrier. If their rates skyrocket or they stop writing Florida property, you have to start your search over from scratch.</p>
+        <p style="color: #cbd5e1; font-size: 0.9rem;">One quote. One set of underwriting rules. Zero flexibility.</p>
+      </div>
+
+      <div style="background: linear-gradient(180deg, rgba(37, 99, 235, 0.12) 0%, rgba(17, 24, 39, 0.9) 100%); border: 2px solid #2563eb; padding: 32px; border-radius: var(--radius-lg);">
+        <h3 style="color: #38bdf8; margin-bottom: 12px; font-size: 1.3rem;">✅ Your Insurance Pro (Independent)</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 12px;">We shop the entire vetted marketplace across dozens of top-rated carriers through premier networks like First Connect.</p>
+        <p style="color: #cbd5e1; font-size: 0.9rem;">Tailored coverage, unbiased advice, and an advocate in your corner when claims happen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>🛡️ YOUR INSURANCE PRO LLC</h4>
+          <p style="margin-bottom: 16px;">
+            Principal Agent: <strong>Jose Lopez</strong><br>
+            Florida Licensed Insurance Representative.<br>
+            Serving Orange Park, Clay County, Jacksonville, and statewide Florida.
+          </p>
+          <p>
+            📞 Phone / Text: <a href="tel:+19045631694" style="color: #38bdf8;">(904) 563-1694</a><br>
+            ✉️ Email: <a href="mailto:jose@joseyourinsurancepro.com" style="color: #38bdf8;">jose@joseyourinsurancepro.com</a><br>
+            🌐 Web: <a href="https://joseyourinsurancepro.com" style="color: #38bdf8;">joseyourinsurancepro.com</a>
+          </p>
+        </div>
+        <div class="footer-links">
+          <h5>Insurance Lines</h5>
+          <ul>
+            <li><a href="#intake" onclick="switchTab('commercial')">Commercial Liability & BOP</a></li>
+            <li><a href="#intake" onclick="switchTab('home')">Homeowners & Flood</a></li>
+            <li><a href="#intake" onclick="switchTab('auto')">Auto & Fleet Insurance</a></li>
+            <li><a href="#intake" onclick="switchTab('life')">Life & Key-Man Coverage</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Agency Resources</h5>
+          <ul>
+            <li><a href="#intake">Submit Lead Intake</a></li>
+            <li><a href="tel:+19045631694">Schedule Consultation</a></li>
+            <li><a href="#why-independent">Carrier Network</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Your Insurance Pro LLC. All Rights Reserved. Policies and premium estimates subject to carrier underwriting approval.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let currentLine = 'commercial';
+    let lastGeneratedProfile = null;
+
+    function switchTab(line) {
+      currentLine = line;
+      
+      // Update Tab Styles
+      ['commercial', 'home', 'auto', 'life'].forEach(t => {
+        const tabEl = document.getElementById('tab-' + t);
+        const fieldsEl = document.getElementById('fields-' + t);
+        if (t === line) {
+          tabEl.classList.add('active');
+          if (fieldsEl) fieldsEl.style.display = 'block';
+        } else {
+          tabEl.classList.remove('active');
+          if (fieldsEl) fieldsEl.style.display = 'none';
+        }
+      });
+    }
+
+    function selectLine(line) {
+      switchTab(line);
+      document.getElementById('intake').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function processLeadSubmission(e) {
+      e.preventDefault();
+
+      // Assemble Standardized AMS / Quoting Bot Schema
+      const profile = {
+        metadata: {
+          lead_id: 'LEAD-' + Date.now().toString(36).toUpperCase(),
+          created_at: new Date().toISOString(),
+          source: 'Web Intake (joseyourinsurancepro.com)',
+          line_of_business: currentLine.toUpperCase(),
+          agency: 'Your Insurance Pro LLC',
+          agent: 'Jose Lopez'
+        },
+        primary_insured: {
+          first_name: document.getElementById('contact_first_name').value.trim(),
+          last_name: document.getElementById('contact_last_name').value.trim(),
+          email: document.getElementById('contact_email').value.trim(),
+          phone: document.getElementById('contact_phone').value.trim(),
+          date_of_birth: document.getElementById('contact_dob').value || null,
+          zip_code: document.getElementById('mailing_zip').value.trim(),
+          state: 'FL'
+        },
+        risk_profile: {},
+        policy_intent: {
+          prior_carrier: document.getElementById('prior_carrier').value.trim() || 'None',
+          target_effective_date: document.getElementById('policy_exp_date').value || 'Immediate',
+          special_notes: document.getElementById('client_notes').value.trim()
+        }
+      };
+
+      // Populate line-specific data
+      if (currentLine === 'commercial') {
+        profile.risk_profile = {
+          business_name: document.getElementById('comm_biz_name').value.trim(),
+          dba: document.getElementById('comm_dba').value.trim(),
+          entity_type: document.getElementById('comm_entity_type').value,
+          industry_operations: document.getElementById('comm_industry').value.trim(),
+          years_in_business: parseInt(document.getElementById('comm_years_in_biz').value) || 0,
+          gross_annual_revenue: parseFloat(document.getElementById('comm_annual_revenue').value) || 0,
+          employee_count: parseInt(document.getElementById('comm_employees').value) || 0,
+          annual_payroll: parseFloat(document.getElementById('comm_annual_payroll').value) || 0,
+          coverages_requested: {
+            general_liability: document.getElementById('cov_gl').checked,
+            workers_compensation: document.getElementById('cov_wc').checked,
+            bop: document.getElementById('cov_bop').checked,
+            commercial_auto: document.getElementById('cov_comm_auto').checked,
+            cyber_liability: document.getElementById('cov_cyber').checked,
+            inland_marine: document.getElementById('cov_inland_marine').checked
+          }
+        };
+      } else if (currentLine === 'home') {
+        profile.risk_profile = {
+          property_address: document.getElementById('home_address').value.trim(),
+          year_built: parseInt(document.getElementById('home_year_built').value) || null,
+          square_footage: parseInt(document.getElementById('home_sqft').value) || null,
+          roof_year: parseInt(document.getElementById('home_roof_year').value) || null,
+          roof_type: document.getElementById('home_roof_type').value,
+          construction_type: document.getElementById('home_construction').value,
+          prior_losses: document.getElementById('home_prior_claims').value
+        };
+      } else if (currentLine === 'auto') {
+        profile.risk_profile = {
+          vehicle_year: parseInt(document.getElementById('auto_year').value) || null,
+          vehicle_make: document.getElementById('auto_make').value.trim(),
+          vehicle_model: document.getElementById('auto_model').value.trim(),
+          vin: document.getElementById('auto_vin').value.trim(),
+          primary_use: document.getElementById('auto_use').value,
+          annual_miles: parseInt(document.getElementById('auto_annual_miles').value) || null,
+          driver_record: document.getElementById('auto_driver_history').value,
+          target_limits: document.getElementById('auto_liability_limit').value
+        };
+      } else if (currentLine === 'life') {
+        profile.risk_profile = {
+          benefit_amount: parseFloat(document.getElementById('life_coverage_amount').value) || 500000,
+          term_length: document.getElementById('life_term').value,
+          tobacco_status: document.getElementById('life_tobacco').value,
+          health_class: document.getElementById('life_health_status').value
+        };
+      }
+
+      lastGeneratedProfile = profile;
+
+      // Save to localStorage for persistence
+      const savedProfiles = JSON.parse(localStorage.getItem('ams_quote_leads') || '[]');
+      savedProfiles.push(profile);
+      localStorage.setItem('ams_quote_leads', JSON.stringify(savedProfiles));
+
+      // Display the JSON card
+      const card = document.getElementById('amsProfileCard');
+      const display = document.getElementById('amsJsonDisplay');
+      display.innerText = JSON.stringify(profile, null, 2);
+      card.style.display = 'block';
+      card.scrollIntoView({ behavior: 'smooth' });
+
+      // Configure Email Link to Jose
+      const subject = encodeURIComponent(`[NEW LEAD] ${profile.primary_insured.first_name} ${profile.primary_insured.last_name} - ${profile.metadata.line_of_business}`);
+      const body = encodeURIComponent(
+        `New structured insurance lead submitted on joseyourinsurancepro.com:\n\n` +
+        JSON.stringify(profile, null, 2)
+      );
+      document.getElementById('emailAgentBtn').href = `mailto:jose@joseyourinsurancepro.com?subject=${subject}&body=${body}`;
+    }
+
+    function copyAmsJson() {
+      if (!lastGeneratedProfile) return;
+      navigator.clipboard.writeText(JSON.stringify(lastGeneratedProfile, null, 2)).then(() => {
+        alert('Copied standardized AMS profile JSON to clipboard!');
+      });
+    }
+
+    function downloadAmsJson() {
+      if (!lastGeneratedProfile) return;
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(lastGeneratedProfile, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", `${lastGeneratedProfile.metadata.lead_id}_profile.json`);
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    }
+  </script>
+</body>
+</html>
